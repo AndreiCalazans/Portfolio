@@ -1,9 +1,14 @@
 
-// @import 'component';
+@import 'nav';
+@import 'home';
 
-div {
+html {
+  font-size: 12px;
+  overflow-x: hidden;
+}
 
-  h1 {
-    color:red;
-  }
+//Footer
+.page-footer {
+  padding-top: 0 !important;
+  background-color: black !important;
 }

@@ -1,2 +1,107 @@
-div h1 {
-  color: red; }
+@import url(https://fonts.googleapis.com/css?family=Tulpen+One);.brand-logo {
+  text-decoration: line-through; }
+  .brand-logo i {
+    font-family: 'Tulpen One', cursive;
+    font-size: 30px;
+    margin: 0 20px !important;
+    letter-spacing: 2.5px; }
+
+.active {
+  background: rgba(255, 255, 255, 0.2); }
+
+nav {
+  background: black; }
+  nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2); }
+
+img {
+  width: 400px;
+  height: 500px;
+  margin: 0 !important; }
+
+.images-position, .top-img, .bottom-img {
+  top: 0px;
+  right: 0px; }
+
+.top-img {
+  z-index: 1;
+  position: absolute;
+  transform: rotateY(-25deg) rotateX(-65deg);
+  margin-left: 123px;
+  box-shadow: -33px 37px 18px 0px rgba(255, 255, 255, 0.7);
+  transition: all 0.5s; }
+
+.top-img:hover {
+  transform: rotateY(-25deg) rotateX(-65deg) translateY(10px) translateX(-7px);
+  box-shadow: -25px 25px 15px 0px rgba(255, 255, 255, 0.4); }
+
+.bottom-img {
+  z-index: 0;
+  position: absolute;
+  transform: translateY(40px) translateX(-20px) rotateY(-25deg) rotateX(-65deg);
+  transition: all 0.5s; }
+
+.img-box:hover .bottom-img {
+  transform: translateY(45px) translateX(-20px) rotateY(-25deg) rotateX(-65deg); }
+
+@media (max-width: 1030px) {
+  .top-img {
+    transform: scale(0.8) rotateY(-25deg) rotateX(-65deg); }
+  .top-img:hover {
+    transform: scale(0.8) rotateY(-25deg) rotateX(-65deg) translateY(10px) translateX(-7px); }
+  .bottom-img {
+    transform: scale(0.8) translateY(40px) translateX(-20px) rotateY(-25deg) rotateX(-65deg); }
+  .img-box:hover .bottom-img {
+    transform: scale(0.8) translateY(45px) translateX(-20px) rotateY(-25deg) rotateX(-65deg); } }
+
+@media (max-width: 930px) {
+  .images-position, .top-img, .bottom-img {
+    right: -100px;
+    top: 50px; } }
+
+#home {
+  margin: 0 !important;
+  background: linear-gradient(126deg, #5bb8db, #48a4c6, #81cce8, #3eb2cc, #2493ac);
+  background-size: 1000% 1000%;
+  -webkit-animation: AnimationName 46s ease infinite;
+  -moz-animation: AnimationName 46s ease infinite;
+  animation: AnimationName 46s ease infinite;
+  color: white;
+  padding: 25px; }
+  #home .intro {
+    padding: 30px;
+    margin-bottom: 30px; }
+  #home h3 {
+    font-size: 30px; }
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 29% 0%; }
+  50% {
+    background-position: 72% 100%; }
+  100% {
+    background-position: 29% 0%; } }
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 29% 0%; }
+  50% {
+    background-position: 72% 100%; }
+  100% {
+    background-position: 29% 0%; } }
+
+@keyframes AnimationName {
+  0% {
+    background-position: 29% 0%; }
+  50% {
+    background-position: 72% 100%; }
+  100% {
+    background-position: 29% 0%; } }
+
+html {
+  font-size: 12px;
+  overflow-x: hidden; }
+
+.page-footer {
+  padding-top: 0 !important;
+  background-color: black !important; }

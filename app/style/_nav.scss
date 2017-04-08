@@ -1,0 +1,26 @@
+//logo
+@import url('https://fonts.googleapis.com/css?family=Tulpen+One');
+.brand-logo {
+  text-decoration: line-through;
+  i {
+    font-family: 'Tulpen One', cursive;
+    font-size: 30px;
+    margin: 0 20px !important;
+    letter-spacing: 2.5px;
+
+  }
+}
+.active {
+  background: rgba(260,260,260,0.2);
+}
+//navBar
+nav {
+ background: black;
+ ul {
+   li {
+     a:hover {
+       background: rgba(260,260,260,0.2);
+     }
+   }
+ }
+}

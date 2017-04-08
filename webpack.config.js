@@ -45,5 +45,6 @@ module.exports = {
   },
   plugins: [
     extractPlugin
-  ]
+  ],
+  devtool: 'cheap-module-eval-source-map'
 }

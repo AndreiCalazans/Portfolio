@@ -1,25 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import {Router, browserHistory , Route, IndexRoute} from 'react-router';
 import './style/style.scss';
-var Hello = React.createClass({
-  render() {
 
-
-    return (
-      <div>
-        <h1 >Hi, this is am image and this is your BOILERPLATE</h1>
-        <img src={require('./images/image.png')} alt=""/>
-        <p>I am green</p>
-        <p className='teal'>i am teal</p>
-
-      </div>
-    )
-  }
-});
+import Main from './components/Main.js';
+import Home from './components/Home.js';
+import About from './components/About.js';
+import Portfolio from './components/Portfolio.js';
 
 
 ReactDOM.render(
-  <Hello></Hello>,
+  <Router history={browserHistory}>
+    <Route path='/' component={Main}>
+      <IndexRoute component={Home}></IndexRoute>
+      <Route path='/about' component={About}></Route>
+      <Route path='/portfolio' component={Portfolio}></Route>
+    </Route>
+  </Router>,
   document.getElementById('root')
 )

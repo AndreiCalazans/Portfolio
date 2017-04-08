@@ -1,0 +1,36 @@
+//intro image
+@import 'introImage';
+#home {
+  margin:0 !important;
+  background: linear-gradient(126deg, #5bb8db, #48a4c6, #81cce8, #3eb2cc, #2493ac);
+  background-size: 1000% 1000%;
+  -webkit-animation: AnimationName 46s ease infinite;
+  -moz-animation: AnimationName 46s ease infinite;
+  animation: AnimationName 46s ease infinite;
+  color:white;
+  padding: 25px;
+
+//intro page
+  .intro {
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+h3 {
+  font-size: 30px;
+}
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:29% 0%}
+    50%{background-position:72% 100%}
+    100%{background-position:29% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:29% 0%}
+    50%{background-position:72% 100%}
+    100%{background-position:29% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:29% 0%}
+    50%{background-position:72% 100%}
+    100%{background-position:29% 0%}
+}
