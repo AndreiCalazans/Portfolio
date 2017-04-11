@@ -1,0 +1,28 @@
+#sideNav {
+position: fixed;
+background: #4e4e4e;
+height: 100%;
+width: 210px;
+top: 0;
+left: -100%;
+box-shadow: 2px 0 4px 2px rgba(0,0,0,0.5);
+transition: all 0.5s;
+
+ul {
+  li {
+    padding: 10px;
+    border-bottom: 1px solid #615c5c;
+    a {
+      color: white;
+      background:none;
+    }
+  }
+}
+div ul {
+  display: flex;
+  justify-content: center;
+  li {
+    flex-grow: 1;
+  }
+}
+}

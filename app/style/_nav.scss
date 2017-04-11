@@ -14,12 +14,31 @@
   background: rgba(260,260,260,0.2);
 }
 //navBar
+#sidenav-bar {
+  position: relative;
+  top: 2.5px;
+  left: -10px;
+  cursor: pointer;
+  text-align: right;
+}
+
+
 nav {
  background: black;
  ul {
+   a {
+     padding: 0 10px !important;
+    height: 64px;
+   }
    li {
      a:hover {
        background: rgba(260,260,260,0.2);
+     }
+     .twitter:hover {
+       background-color: lightblue;
+     }
+     .linkedin:hover {
+       background-color: blue;
      }
    }
  }

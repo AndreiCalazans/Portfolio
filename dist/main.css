@@ -9,15 +9,35 @@
 .active {
   background: rgba(255, 255, 255, 0.2); }
 
+#sidenav-bar {
+  position: relative;
+  top: 2.5px;
+  left: -10px;
+  cursor: pointer;
+  text-align: right; }
+
 nav {
   background: black; }
+  nav ul a {
+    padding: 0 10px !important;
+    height: 64px; }
   nav ul li a:hover {
     background: rgba(255, 255, 255, 0.2); }
+  nav ul li .twitter:hover {
+    background-color: lightblue; }
+  nav ul li .linkedin:hover {
+    background-color: blue; }
 
 img {
   width: 400px;
   height: 500px;
   margin: 0 !important; }
+
+.img-box i {
+  position: relative;
+  top: 80px;
+  cursor: pointer;
+  color: white; }
 
 .images-position, .top-img, .bottom-img {
   top: 0px;
@@ -59,7 +79,25 @@ img {
     right: -100px;
     top: 50px; } }
 
+@media (max-width: 830px) {
+  .img-box {
+    display: none; }
+  .row .col.m8 {
+    width: 100% !important; } }
+
+#jobTitle:after {
+  content: "Front-End Developer";
+  animation: animateTitle 10s linear 0s infinite;
+  font-size: 50px; }
+
+@keyframes animateTitle {
+  33% {
+    content: 'Back-End Developer'; }
+  66% {
+    content: 'Javascript Developer'; } }
+
 #home {
+  min-height: 83vh;
   margin: 0 !important;
   background: linear-gradient(126deg, #5bb8db, #48a4c6, #81cce8, #3eb2cc, #2493ac);
   background-size: 1000% 1000%;
@@ -68,11 +106,19 @@ img {
   animation: AnimationName 46s ease infinite;
   color: white;
   padding: 25px; }
+  #home .row .col {
+    margin-bottom: 0px; }
   #home .intro {
-    padding: 30px;
+    height: 240px;
+    display: flex;
+    align-items: center;
     margin-bottom: 30px; }
   #home h3 {
-    font-size: 30px; }
+    font-size: 20px; }
+  #home a i {
+    color: white; }
+  #home blockquote p {
+    text-align: justify; }
 
 @-webkit-keyframes AnimationName {
   0% {
@@ -97,6 +143,52 @@ img {
     background-position: 72% 100%; }
   100% {
     background-position: 29% 0%; } }
+
+@media (max-width: 600px) {
+  #home .intro {
+    height: 180px; } }
+
+@media (max-width: 480px) {
+  #jobTitle:after {
+    font-size: 30px; } }
+
+.contact-email {
+  color: white;
+  cursor: pointer; }
+
+.flex-center, .small-container a, .small-container a div {
+  display: flex;
+  align-items: center; }
+
+.small-container a {
+  color: white;
+  border-top: 1px solid white;
+  height: 80px; }
+  .small-container a div {
+    flex-grow: 1; }
+    .small-container a div h3 {
+      margin: 10px; }
+
+#sideNav {
+  position: fixed;
+  background: #4e4e4e;
+  height: 100%;
+  width: 210px;
+  top: 0;
+  left: -100%;
+  box-shadow: 2px 0 4px 2px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s; }
+  #sideNav ul li {
+    padding: 10px;
+    border-bottom: 1px solid #615c5c; }
+    #sideNav ul li a {
+      color: white;
+      background: none; }
+  #sideNav div ul {
+    display: flex;
+    justify-content: center; }
+    #sideNav div ul li {
+      flex-grow: 1; }
 
 html {
   font-size: 12px;

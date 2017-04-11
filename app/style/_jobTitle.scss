@@ -1,0 +1,14 @@
+#jobTitle:after {
+  content: "Front-End Developer";
+  animation: animateTitle 10s linear 0s infinite;
+  font-size: 50px;
+}
+
+@keyframes animateTitle {
+  33% {
+    content: 'Back-End Developer';
+  }
+  66% {
+    content: 'Javascript Developer'
+  }
+}

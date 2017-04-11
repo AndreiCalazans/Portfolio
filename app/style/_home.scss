@@ -1,6 +1,11 @@
 //intro image
 @import 'introImage';
+
+// job title animation
+@import 'jobTitle';
+
 #home {
+  min-height: 83vh;
   margin:0 !important;
   background: linear-gradient(126deg, #5bb8db, #48a4c6, #81cce8, #3eb2cc, #2493ac);
   background-size: 1000% 1000%;
@@ -9,14 +14,27 @@
   animation: AnimationName 46s ease infinite;
   color:white;
   padding: 25px;
+// medium display box
 
+   .row .col {
+     margin-bottom: 0px;
+   }
 //intro page
   .intro {
-    padding: 30px;
+    height: 240px;
+    display: flex;
+    align-items: center;
     margin-bottom: 30px;
   }
 h3 {
-  font-size: 30px;
+  font-size: 20px;
+}
+a i {
+  color: white;
+}
+// smaller paragraphs under the job title
+blockquote p {
+  text-align: justify;
 }
 }
 @-webkit-keyframes AnimationName {
@@ -33,4 +51,40 @@ h3 {
     0%{background-position:29% 0%}
     50%{background-position:72% 100%}
     100%{background-position:29% 0%}
+}
+
+// responsiveness
+@media (max-width:600px) {
+  #home .intro {
+    height: 180px;
+  }
+}
+@media (max-width:480px) {
+  #jobTitle:after {
+
+    font-size: 30px;
+  }
+}
+//contact email
+.contact-email {
+  color: white;
+  cursor:pointer;
+}
+.flex-center {
+  display: flex;
+  align-items:center;
+}
+//boxes when small
+.small-container a {
+  @extend .flex-center;
+  color:white;
+  border-top: 1px solid white;
+  height: 80px;
+  div {
+  @extend .flex-center;
+    flex-grow: 1;
+    h3 {
+      margin: 10px;
+    }
+  }
 }

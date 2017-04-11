@@ -19,7 +19,12 @@ img {
   margin: 0 !important;
 }
 .img-box {
-
+  i {
+    position: relative;
+    top: 80px;
+    cursor: pointer;
+    color: white;
+  }
 }
 .images-position {
   top: 0px;
@@ -72,5 +77,13 @@ img {
   .images-position {
     right: -100px;
     top: 50px;
+  }
+}
+@media (max-width: 830px) {
+  .img-box {
+    display: none;
+  }
+  .row .col.m8 {
+    width:100% !important;
   }
 }
