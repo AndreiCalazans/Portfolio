@@ -62,13 +62,13 @@ const Home = React.createClass({
                   </Link>
                 </div>
                 <div className="small-container col m6 s12">
-                  <Link to='/portfolio'>
+                  <a href='./files/andrei.pdf' download>
                   <div>
                     <i className="fa fa-file-text fa-2x" aria-hidden="true"></i>
                     <h3>Resume</h3>
                   </div>
                     <i className="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

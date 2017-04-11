@@ -7,7 +7,7 @@ import Main from './components/Main.js';
 import Home from './components/Home.js';
 import About from './components/About.js';
 import Portfolio from './components/Portfolio.js';
-
+import ProjectDisplay from './components/ProjectDisplay.js';
 
 ReactDOM.render(
   <Router history={browserHistory}>
@@ -15,6 +15,7 @@ ReactDOM.render(
       <IndexRoute component={Home}></IndexRoute>
       <Route path='/about' component={About}></Route>
       <Route path='/portfolio' component={Portfolio}></Route>
+      <Route path='/:projectName' component={ProjectDisplay}></Route>
     </Route>
   </Router>,
   document.getElementById('root')
