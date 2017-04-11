@@ -251,6 +251,82 @@ img {
       font-size: 20px;
       color: white; }
 
+#contact {
+  display: flex;
+  background: linear-gradient(225deg, #26c59c, #34b291, #67e1c1, #1e7a61);
+  background-size: 800% 800%;
+  padding: 30px;
+  min-height: 85vh;
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+  color: white; }
+  #contact .contactStory {
+    width: 50%;
+    padding: 10px;
+    flex-grow: 1; }
+  #contact .part, #contact ul {
+    margin: 40px 0; }
+  #contact h2 {
+    text-decoration: underline; }
+  #contact h5 i {
+    margin: 10px; }
+  #contact h5 a {
+    color: white; }
+  #contact ul {
+    display: flex; }
+    #contact ul li {
+      margin: 10px; }
+      #contact ul li a {
+        color: white; }
+  #contact .row {
+    margin-bottom: 0px !important; }
+  #contact form label {
+    color: white; }
+    #contact form label .active {
+      background: none !important; }
+  #contact form input, #contact form textarea {
+    border-bottom-color: white !important; }
+
+@media (max-width: 650px) {
+  #contact {
+    flex-direction: column; }
+    #contact .contactStory {
+      width: 100%; }
+    #contact .part, #contact ul {
+      margin: 0; } }
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 88% 0%; }
+  50% {
+    background-position: 13% 100%; }
+  100% {
+    background-position: 88% 0%; } }
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 88% 0%; }
+  50% {
+    background-position: 13% 100%; }
+  100% {
+    background-position: 88% 0%; } }
+
+@keyframes AnimationName {
+  0% {
+    background-position: 88% 0%; }
+  50% {
+    background-position: 13% 100%; }
+  100% {
+    background-position: 88% 0%; } }
+
+#about {
+  background: #FFEB3B;
+  padding: 30px;
+  min-height: 85vh; }
+  #about .leadText {
+    font-size: 20px; }
+
 html {
   font-size: 12px;
   overflow-x: hidden; }

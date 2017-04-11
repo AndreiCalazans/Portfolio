@@ -13,6 +13,11 @@ var PORT = process.env.PORT || 3000;
 //
 //
 app.use(express.static('dist'));
+app.post('/sendEmail' , function(req, res) {
+  //handle msg sent
+  console.log(req.body);
+  res.send('ok');
+})
 app.get('*', function (req, res) {
   res.sendFile(__dirname + '/dist/index.html');
 });
