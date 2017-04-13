@@ -28,16 +28,15 @@ img {
 }
 .images-position {
   top: 0px;
-  right: 0px;
+  right: -50px;
 }
 .top-img {
     z-index:1;
     position: absolute;
     @extend .images-position;
     transform: rotateY(-25deg) rotateX(-65deg);
-    margin-left: 123px;
     box-shadow: -33px 37px 18px 0px rgba(260,260,260,0.7);
-  transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 .top-img:hover {
@@ -75,7 +74,7 @@ img {
 }
 @media (max-width:930px) {
   .images-position {
-    right: -100px;
+    right: -150px;
     top: 50px;
   }
 }

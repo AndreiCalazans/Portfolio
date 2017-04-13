@@ -19,6 +19,9 @@ const SideNav = React.createClass({
           <li>
             <Link activeClassName='active' to='/contact'>Contact</Link>
           </li>
+          <li>
+          <a href="./files/andrei.pdf" download >Resume</a>
+          </li>
         </ul>
         <div>
           <ul >

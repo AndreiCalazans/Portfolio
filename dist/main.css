@@ -3,7 +3,7 @@
   .brand-logo i {
     font-family: 'Tulpen One', cursive;
     font-size: 30px;
-    margin: 0 20px !important;
+    margin: 0 10px !important;
     letter-spacing: 2.5px; }
 
 .active {
@@ -28,72 +28,62 @@ nav {
   nav ul li .linkedin:hover {
     background-color: blue; }
 
-img {
-  width: 400px;
-  height: 500px;
-  margin: 0 !important; }
-
-.img-box i {
-  position: relative;
-  top: 80px;
-  cursor: pointer;
-  color: white; }
-
-.images-position, .top-img, .bottom-img {
-  top: 0px;
-  right: 0px; }
-
-.top-img {
-  z-index: 1;
-  position: absolute;
-  transform: rotateY(-25deg) rotateX(-65deg);
-  margin-left: 123px;
-  box-shadow: -33px 37px 18px 0px rgba(255, 255, 255, 0.7);
-  transition: all 0.5s; }
-
-.top-img:hover {
-  transform: rotateY(-25deg) rotateX(-65deg) translateY(10px) translateX(-7px);
-  box-shadow: -25px 25px 15px 0px rgba(255, 255, 255, 0.4); }
-
-.bottom-img {
-  z-index: 0;
-  position: absolute;
-  transform: translateY(40px) translateX(-20px) rotateY(-25deg) rotateX(-65deg);
-  transition: all 0.5s; }
-
-.img-box:hover .bottom-img {
-  transform: translateY(45px) translateX(-20px) rotateY(-25deg) rotateX(-65deg); }
-
-@media (max-width: 1030px) {
-  .top-img {
-    transform: scale(0.8) rotateY(-25deg) rotateX(-65deg); }
-  .top-img:hover {
-    transform: scale(0.8) rotateY(-25deg) rotateX(-65deg) translateY(10px) translateX(-7px); }
-  .bottom-img {
-    transform: scale(0.8) translateY(40px) translateX(-20px) rotateY(-25deg) rotateX(-65deg); }
-  .img-box:hover .bottom-img {
-    transform: scale(0.8) translateY(45px) translateX(-20px) rotateY(-25deg) rotateX(-65deg); } }
-
-@media (max-width: 930px) {
-  .images-position, .top-img, .bottom-img {
-    right: -100px;
-    top: 50px; } }
-
-@media (max-width: 830px) {
-  .img-box {
-    display: none; }
-  .row .col.m8 {
-    width: 100% !important; } }
+#jobTitle:before {
+  content: "Front-End Developer";
+  animation: animateTitle 10s linear 0s infinite; }
 
 #jobTitle:after {
-  content: "Front-End Developer";
-  animation: animateTitle 10s linear 0s infinite;
-  font-size: 50px; }
+  content: '_';
+  animation: animateDash 0.8s linear 0s infinite; }
+
+@keyframes animateDash {
+  50% {
+    content: ''; }
+  100% {
+    content: '_'; } }
 
 @keyframes animateTitle {
-  33% {
+  1% {
+    content: 'Front-End Developer'; }
+  5% {
+    content: 'Front-End Develope'; }
+  10% {
+    content: 'Front-End Develop'; }
+  15% {
+    content: 'Front-End Develo'; }
+  20% {
+    content: 'Front-End Devel'; }
+  25% {
+    content: 'Front-End De'; }
+  30% {
+    content: 'Front-End'; }
+  35% {
+    content: 'Front-'; }
+  40% {
+    content: 'B'; }
+  45% {
+    content: 'Back-'; }
+  50% {
+    content: 'Back-End'; }
+  55% {
+    content: 'Back-End Deve'; }
+  60% {
     content: 'Back-End Developer'; }
-  66% {
+  65% {
+    content: 'Back-End Develo'; }
+  70% {
+    content: 'Back-End De'; }
+  75% {
+    content: 'Back-'; }
+  80% {
+    content: ''; }
+  85% {
+    content: 'Java'; }
+  90% {
+    content: 'Javascript'; }
+  95% {
+    content: 'Javascript Dev'; }
+  100% {
     content: 'Javascript Developer'; } }
 
 #home {
@@ -106,10 +96,57 @@ img {
   animation: AnimationName 46s ease infinite;
   color: white;
   padding: 25px; }
+  #home img {
+    width: 400px;
+    height: 500px;
+    margin: 0 !important; }
+  #home .img-box i {
+    position: relative;
+    top: 80px;
+    cursor: pointer;
+    color: white; }
+  #home .images-position, #home .top-img, #home .bottom-img {
+    top: 0px;
+    right: -50px; }
+  #home .top-img {
+    z-index: 1;
+    position: absolute;
+    transform: rotateY(-25deg) rotateX(-65deg);
+    box-shadow: -33px 37px 18px 0px rgba(255, 255, 255, 0.7);
+    transition: all 0.5s; }
+  #home .top-img:hover {
+    transform: rotateY(-25deg) rotateX(-65deg) translateY(10px) translateX(-7px);
+    box-shadow: -25px 25px 15px 0px rgba(255, 255, 255, 0.4); }
+  #home .bottom-img {
+    z-index: 0;
+    position: absolute;
+    transform: translateY(40px) translateX(-20px) rotateY(-25deg) rotateX(-65deg);
+    transition: all 0.5s; }
+  #home .img-box:hover .bottom-img {
+    transform: translateY(45px) translateX(-20px) rotateY(-25deg) rotateX(-65deg); }
+  @media (max-width: 1030px) {
+    #home .top-img {
+      transform: scale(0.8) rotateY(-25deg) rotateX(-65deg); }
+    #home .top-img:hover {
+      transform: scale(0.8) rotateY(-25deg) rotateX(-65deg) translateY(10px) translateX(-7px); }
+    #home .bottom-img {
+      transform: scale(0.8) translateY(40px) translateX(-20px) rotateY(-25deg) rotateX(-65deg); }
+    #home .img-box:hover .bottom-img {
+      transform: scale(0.8) translateY(45px) translateX(-20px) rotateY(-25deg) rotateX(-65deg); } }
+  @media (max-width: 930px) {
+    #home .images-position, #home .top-img, #home .bottom-img {
+      right: -150px;
+      top: 50px; } }
+  @media (max-width: 830px) {
+    #home .img-box {
+      display: none; }
+    #home .row .col.m8 {
+      width: 100% !important; } }
   #home .row .col {
     margin-bottom: 0px; }
   #home .intro {
     height: 240px;
+    padding: 20px;
     display: flex;
     align-items: center;
     margin-bottom: 30px; }
@@ -143,6 +180,10 @@ img {
     background-position: 72% 100%; }
   100% {
     background-position: 29% 0%; } }
+
+@media (min-width: 830px) {
+  #home .intro {
+    width: 65%; } }
 
 @media (max-width: 600px) {
   #home .intro {
@@ -237,7 +278,7 @@ img {
     padding: 40px;
     position: relative;
     width: 100%;
-    height: 500px; }
+    height: 100%; }
   #displayProject .info {
     position: relative;
     width: 100%;
@@ -250,6 +291,23 @@ img {
     #displayProject .info a {
       font-size: 20px;
       color: white; }
+
+ul.slider-list[style] {
+  height: 100% !important;
+  min-height: 60vw; }
+
+li.slider-slide {
+  min-height: 150%; }
+
+@media (min-width: 750px) {
+  ul.slider-list {
+    min-height: 400px; } }
+
+#goBack {
+  position: fixed;
+  left: 10px;
+  top: 60px;
+  z-index: 100; }
 
 #contact {
   display: flex;
@@ -326,6 +384,19 @@ img {
   min-height: 85vh; }
   #about .leadText {
     font-size: 20px; }
+  #about .stack {
+    padding-top: 10px; }
+  #about p {
+    overflow-wrap: break-word; }
+    #about p i {
+      font-size: 40px;
+      margin: 10px; }
+  #about .devicon-javascript-plain.colored, #about .devicon-babel-original.colored, #about .devicon-babel-plain.colored, #about .devicon-atom-original-wordmark.colored {
+    color: black; }
+  #about ul {
+    padding: 0 15px; }
+    #about ul li {
+      list-style: circle; }
 
 html {
   font-size: 12px;

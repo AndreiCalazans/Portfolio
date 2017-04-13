@@ -6,22 +6,48 @@ const About = React.createClass({
       <div id='about'>
         <h1>About me</h1>
         <div className="leadText">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur repudiandae sapiente reiciendis nostrum dolores
-            omnis quaerat laboriosam porro, labore, amet deserunt adipisci nisi! Libero rem voluptatem sapiente soluta totam fuga!</p>
+          <p>I'm Andrei Calazans, a Front-End and Javascript Developer living in the state of Espirito Santo in Brazil. With extreme passion for
+           developement. In 2016 I decided to learn Development, since then I have been developing Web Apps for local stores and entreprenuers. I am
+         experienced with single page apps and Content Management Systems(CMS).</p>
+
         </div>
         <div className="text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque nemo ex blanditiis tempore consequuntur
-            quia dolorem cum ea placeat quas, iste dolores aliquam veritatis similique optio, fugiat modi earum, error.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam consequuntur impedit in beatae odit recusandae
-               fuga minus laudantium amet aperiam. Fugit suscipit labore, voluptatem qui? Nisi mollitia vitae necessitatibus ad.</p>
+          <p>Clients usually approach me when they need a developer who can provide:</p>
+          <ul>
+            <li>Responsive Websites</li>
+            <li>Web Apps for businesses</li>
+            <li>eCommerce Apps</li>
+            <li>Front-End development in general</li>
+          </ul>
         </div>
         <div className="text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque nemo ex blanditiis tempore consequuntur
-            quia dolorem cum ea placeat quas, iste dolores aliquam veritatis similique optio, fugiat modi earum, error.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam consequuntur impedit in beatae odit recusandae
-               fuga minus laudantium amet aperiam. Fugit suscipit labore, voluptatem qui? Nisi mollitia vitae necessitatibus ad.</p>
+          <p>Besides being a normal person, I'm also very entusiastic and focused in what i want. I spend my time learning more about Development
+            or with my beloved wife.</p>
+          <p>I am an undergraduate of Civil Engineering at Pitagoras College of Linhares, where I apply my knowledge about structures and mechanics of fluids
+          with programming. I pretend to pursuit career in Development even though I'm still studying Civil Engineering. The basic principles of Mathmatics and logics have helped
+        me throughout my pursuit to learn and become a better Developer.</p>
+
                <h5>Technologies I have worked with:</h5>
-               <p>JS NODEJS RESTC ELJD ASD REACT My Sql</p>
+               <p className='stack'>
+                 <i className="devicon-css3-plain-wordmark colored"></i>
+                 <i className="devicon-html5-plain-wordmark colored"></i>
+                 <i className="devicon-react-original-wordmark colored"></i>
+                 <i className="devicon-nodejs-plain-wordmark colored"></i>
+                 <i className="devicon-mongodb-plain-wordmark colored"></i>
+                 <i className="devicon-mysql-plain-wordmark colored"></i>
+                 <i className="devicon-mocha-plain colored"></i>
+                 <i className="devicon-linux-plain colored"></i>
+                 <i className="devicon-bootstrap-plain-wordmark colored"></i>
+                 <i className="devicon-foundation-plain-wordmark colored"></i>
+                 <i className="devicon-git-plain-wordmark colored"></i>
+                 <i className="devicon-github-plain-wordmark colored"></i>
+                 <i className="devicon-heroku-plain-wordmark colored"></i>
+                 <i className="devicon-javascript-plain colored"></i>
+                 <i className="devicon-jquery-plain-wordmark colored"></i>
+                 <i className="devicon-ubuntu-plain-wordmark colored"></i>
+                 <i className="devicon-babel-plain colored"></i>
+                 <i className="devicon-atom-original-wordmark colored"></i>
+               </p>
         </div>
       </div>
     )

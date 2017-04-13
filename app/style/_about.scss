@@ -6,4 +6,23 @@
   .leadText {
     font-size: 20px;
   }
+  .stack {
+    padding-top: 10px;
+  }
+  p {
+    overflow-wrap: break-word;
+    i {
+      font-size: 40px;
+      margin: 10px;
+    }
+  }
+  .devicon-javascript-plain.colored , .devicon-babel-original.colored, .devicon-babel-plain.colored , .devicon-atom-original-wordmark.colored {
+    color: black
+  }
+  ul {
+    padding: 0 15px;
+    li {
+
+    list-style: circle;
+  }}
 }

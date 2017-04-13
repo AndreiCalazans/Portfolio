@@ -76,7 +76,7 @@ const Home = React.createClass({
               <Link to='/portfolio'>
               <i className="fa fa-chevron-right fa-4x" aria-hidden="true"></i>
               </Link>
-              <img className='top-img' src={require('../images/votingApp.png')} alt=""/>
+              <img className='top-img' src={require('../images/votingApp/votingApp.png')} alt=""/>
               <img className='bottom-img' src={require('../images/codeBase.png')} alt=""/>
             </div>
           </div>

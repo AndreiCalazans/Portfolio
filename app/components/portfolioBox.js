@@ -9,12 +9,13 @@ const PortfolioBox = React.createClass({
     var {name , info , img, color, bgColor} = this.props;
     return (
       <div onClick={this.displayBig} className="box" style={{background: bgColor}}>
-        <figure className="img-portfolio responsive-img">
-          <img src={img} alt=""/>
+        <figure className=" img-portfolio responsive-img">
+          <img  src={img} alt=""/>
         </figure>
         <div className="info" style={{background: color}}>
           <h3>{name}</h3>
           <p>{info}</p>
+          <p style={{textAlign: 'right'}}><i className="fa fa-chevron-right" aria-hidden="true"></i></p>
         </div>
       </div>
     )

@@ -1,10 +1,10 @@
 //intro image
-@import 'introImage';
 
 // job title animation
 @import 'jobTitle';
 
 #home {
+  @import 'introImage';
   min-height: 83vh;
   margin:0 !important;
   background: linear-gradient(126deg, #5bb8db, #48a4c6, #81cce8, #3eb2cc, #2493ac);
@@ -22,6 +22,7 @@
 //intro page
   .intro {
     height: 240px;
+    padding:20px;
     display: flex;
     align-items: center;
     margin-bottom: 30px;
@@ -54,6 +55,12 @@ blockquote p {
 }
 
 // responsiveness
+
+@media (min-width:830px) {
+  #home .intro {
+    width: 65%;
+  }
+}
 @media (max-width:600px) {
   #home .intro {
     height: 180px;
@@ -61,7 +68,6 @@ blockquote p {
 }
 @media (max-width:480px) {
   #jobTitle:after {
-
     font-size: 30px;
   }
 }

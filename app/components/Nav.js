@@ -30,6 +30,9 @@ import {IndexLink , Link} from 'react-router';
             <li>
               <Link activeClassName='active' to='/contact'>Contact</Link>
             </li>
+            <li>
+            <a href="./files/andrei.pdf" download >Resume</a>
+            </li>
           </ul>
 
           <ul id='nav-mobile' className="hide-on-small-only right">

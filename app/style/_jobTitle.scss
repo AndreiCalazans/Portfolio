@@ -1,14 +1,83 @@
-#jobTitle:after {
+#jobTitle:before {
   content: "Front-End Developer";
   animation: animateTitle 10s linear 0s infinite;
-  font-size: 50px;
-}
 
-@keyframes animateTitle {
-  33% {
-    content: 'Back-End Developer';
+}
+#jobTitle:after {
+  content:'_';
+  animation: animateDash 0.8s linear 0s infinite;
+
+}
+@keyframes animateDash {
+  50%{
+    content:'';
   }
-  66% {
-    content: 'Javascript Developer'
+  100%{
+    content:'_';
+  }
+}
+@keyframes animateTitle {
+  1%{
+    content:'Front-End Developer';
+  }
+  5%{
+    content:'Front-End Develope';
+  }
+  10%{
+    content:'Front-End Develop';
+  }
+  15%{
+    content:'Front-End Develo';
+  }
+  20%{
+    content:'Front-End Devel';
+  }
+  25%{
+    content:'Front-End De';
+  }
+  30%{
+    content:'Front-End';
+  }
+  35%{
+    content:'Front-';
+  }
+  40%{
+    content:'B';
+  }
+  45%{
+    content:'Back-';
+  }
+  50%{
+    content:'Back-End';
+  }
+  55%{
+    content:'Back-End Deve';
+  }
+  60%{
+    content:'Back-End Developer';
+  }
+  65%{
+    content:'Back-End Develo';
+  }
+  70%{
+    content:'Back-End De';
+  }
+  75%{
+    content:'Back-';
+  }
+  80%{
+    content:'';
+  }
+  85%{
+    content:'Java';
+  }
+  90%{
+    content:'Javascript';
+  }
+  95%{
+    content:'Javascript Dev';
+  }
+  100%{
+    content:'Javascript Developer';
   }
 }
