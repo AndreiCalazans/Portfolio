@@ -16,8 +16,8 @@ const Home = React.createClass({
                   <h3>What do I offer?</h3>
                   <blockquote>
                     <p>
-                      I'm a Front-end Developer based in Brazil. I develop responsive high-perfomance websites and webapps with
-                      javascript and the industries lastest technology.
+                      I'm a Front-end Developer based in Brazil. I develop responsive high-performance Web Sites and Web Apps with
+                      JavaScript and the industries latest technology.
                     </p>
                   </blockquote>
                 </div>

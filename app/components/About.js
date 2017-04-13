@@ -6,8 +6,8 @@ const About = React.createClass({
       <div id='about'>
         <h1>About me</h1>
         <div className="leadText">
-          <p>I'm Andrei Calazans, a Front-End and Javascript Developer living in the state of Espirito Santo in Brazil. With extreme passion for
-           developement. In 2016 I decided to learn Development, since then I have been developing Web Apps for local stores and entreprenuers. I am
+          <p>I'm Andrei Calazans, a Front-End and JavaScript Developer living in the state of Espirito Santo in Brazil. With extreme passion for
+           development. In 2016 I decided to learn Development, since then I have been developing Web Apps for local stores and entrepreneurs. I am
          experienced with single page apps and Content Management Systems(CMS).</p>
 
         </div>
@@ -21,10 +21,10 @@ const About = React.createClass({
           </ul>
         </div>
         <div className="text">
-          <p>Besides being a normal person, I'm also very entusiastic and focused in what i want. I spend my time learning more about Development
+          <p>Besides being a normal person, I'm also very enthusiastic and focused in what i want. I spend my time learning more about Development
             or with my beloved wife.</p>
           <p>I am an undergraduate of Civil Engineering at Pitagoras College of Linhares, where I apply my knowledge about structures and mechanics of fluids
-          with programming. I pretend to pursuit career in Development even though I'm still studying Civil Engineering. The basic principles of Mathmatics and logics have helped
+          with programming. I pretend to pursuit career in Development even though I'm still studying Civil Engineering. The basic principles of Mathematics and logic have helped
         me throughout my pursuit to learn and become a better Developer.</p>
 
                <h5>Technologies I have worked with:</h5>

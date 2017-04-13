@@ -9,7 +9,6 @@ const ProjectDisplay = React.createClass({
     function renderImgs(imgs) {
       let counter = 0;
       return imgs.map((each) => {
-        console.log(counter);
         counter++;
         return <img key={counter} src={each}/>
       })
@@ -29,10 +28,10 @@ const ProjectDisplay = React.createClass({
           <div className="info" style={{background: each.color}}>
             <h1>{each.name}</h1>
             <hr/>
-            <a href="">{each.url}</a>
+            <a href={each.url} target='_blank'>Live Site</a>
             <h3>HTML CSS JS REACTJS</h3>
-            <p>{each.info}</p>
-            <p>{each.completeInfo}</p>
+            <div>{each.info}</div>
+            <div>{each.completeInfo}</div>
           </div>
         </div>
       )
