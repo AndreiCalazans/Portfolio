@@ -7,6 +7,7 @@ var app = express();
 var PORT = process.env.PORT || 3000;
 require('dotenv').config();
 //nodemailer configuration]
+console.log(process.env.EMAIL_PASS);
 let transporter = nodemailer.createTransport({
     service: 'hotmail',
     auth: {
