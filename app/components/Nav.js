@@ -31,7 +31,7 @@ import {IndexLink , Link} from 'react-router';
               <Link activeClassName='active' to='/contact'>Contact</Link>
             </li>
             <li>
-            <a href="./files/andrei.pdf" download >Resume</a>
+            <a href="./files/andrei.pdf" target='_blank' >Resume</a>
             </li>
           </ul>
 
