@@ -357,7 +357,9 @@ li.slider-slide {
     #contact .contactStory {
       width: 100%; }
     #contact .part, #contact ul {
-      margin: 0; } }
+      margin: 0; }
+    #contact .part h5 {
+      font-size: 13px; } }
 
 @-webkit-keyframes AnimationName {
   0% {
