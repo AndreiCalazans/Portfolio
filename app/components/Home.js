@@ -25,7 +25,7 @@ const Home = React.createClass({
                   <h3>Contact me</h3>
                   <blockquote>
                     <p>
-                      Feel free to get in touch, I'm always happy discuss and advise on your project or development needs.
+                      Feel free to get in touch, I'm always happy to discuss and advise on your project or development needs.
                     </p>
                     <p>+55 (27) 99528-5511</p>
                     <a className='contact-email' href="mailto:andreixoc@hotmail.com">Andreixoc@hotmail.com</a>

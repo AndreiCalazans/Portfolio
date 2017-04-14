@@ -1,6 +1,6 @@
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-// var webpack = require('webpack');
+var webpack = require('webpack');
 var extractPlugin = new ExtractTextPlugin({
   filename: 'main.css'
 });
@@ -44,7 +44,11 @@ module.exports = {
     ]
   },
   plugins: [
-    extractPlugin
-  ],
-  devtool: 'cheap-module-eval-source-map'
+    extractPlugin,
+    new webpack.optimize.UglifyJsPlugin({
+    compress: {
+        warnings: false
+    }
+})
+  ]
 }
