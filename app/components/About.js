@@ -9,7 +9,6 @@ const About = React.createClass({
           <p>I'm Andrei Calazans, a Front-End and JavaScript Developer living in the state of Espirito Santo in Brazil. With extreme passion for
            development. In 2016 I decided to learn Development, since then I have been developing Web Apps for local stores and entrepreneurs. I am
          experienced with single page apps and Content Management Systems(CMS).</p>
-
         </div>
         <div className="text">
           <p>Clients usually approach me when they need a developer who can provide:</p>
@@ -23,6 +22,11 @@ const About = React.createClass({
         <div className="text">
           <p>Besides being a normal person, I'm also very enthusiastic and focused in what i want. I spend my time learning more about Development
             or with my beloved wife.</p>
+            <p>The way I found to improve my Developer abilities was participating in communities with avid learners and
+               great developers. For that i Joined <a href="https://www.freecodecamp.com">FreeCodeCamp</a>, which is an online community full of learners around the world,
+                besides that I also joined <a href="https://tropicalchancer.github.io/projectus/">Chingu</a> Cohorts which is also a community with beginner and experienced developers
+                from around the world joined together to share and learn from each other.
+               These communities played a critical role in helping me to become a better developer.</p>
           <p>I am an undergraduate of Civil Engineering at Pitagoras College of Linhares, where I apply my knowledge about structures and mechanics of fluids
           with programming. I pretend to pursuit career in Development even though I'm still studying Civil Engineering. The basic principles of Mathematics and logic have helped
         me throughout my pursuit to learn and become a better Developer.</p>
