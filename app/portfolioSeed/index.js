@@ -203,5 +203,24 @@ export var portfolios = [
       stack: 'HTML5, Css3, Jquery and Javascript',  
       color: 'lightblue' ,
       bgColor: 'khaki'
+    },
+    {
+      id: 11 ,
+      url: 'http://nightlife-andrei.herokuapp.com/',
+      img: require('../images/nightlife/nightlife3d.png'),
+      displayImages: [
+        require('../images/nightlife/nightlife3d.png'),
+        require('../images/nightlife/nightlife.png'),
+        require('../images/nightlife/nightlife2.png'),
+      ],
+      name: 'NightLife Web App',
+      info: "Nightlife coordination app which let's you search bars to go in your city and see how many people are going",
+      completeInfo: `The Nightlife coordination app is part of the FreeCodeCamp Back-End Certificate curriculum, it is a required challenge that must be done in order to complete the
+      certification. The challenge required the student to build an app that let's the user authenticate, view bars in his/her city
+      , see how many people are already attending that destination and also decide if you are or not going to that destination. This app use a Yelp API to find venues
+      in the cities of the user search.`,
+      stack: 'ReactJs, Autho0, express and NodeJs',  
+      color: 'purple' ,
+      bgColor: 'khaki'
     }
 ];
