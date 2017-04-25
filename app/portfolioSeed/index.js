@@ -225,7 +225,7 @@ export var portfolios = [
     },
     {
       id: 12 ,
-      url: 'http://nightlife-andrei.herokuapp.com/',
+      url: 'http://andrei-chat.herokuapp.com/',
       img: require('../images/socketChat/socketChat3d.png'),
       displayImages: [
         require('../images/socketChat/socketChat3d.png'),
