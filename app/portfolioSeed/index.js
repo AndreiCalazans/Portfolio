@@ -222,5 +222,22 @@ export var portfolios = [
       stack: 'ReactJs, Autho0, express and NodeJs',  
       color: 'purple' ,
       bgColor: 'khaki'
+    },
+    {
+      id: 12 ,
+      url: 'http://nightlife-andrei.herokuapp.com/',
+      img: require('../images/socketChat/socketChat3d.png'),
+      displayImages: [
+        require('../images/socketChat/socketChat3d.png'),
+        require('../images/socketChat/socketChat2.png'),
+        require('../images/socketChat/socketChat.png'),
+      ],
+      name: 'Simple Chat app',
+      info: "Simple Chat app using socket io",
+      completeInfo: `Chat applicaton which permits you to chat with muiltiple users at the same time, it uses Socket io to get instant messages
+      , who is typing and how many users are online`,
+      stack: 'Jquery, SocketIO, express and NodeJs',  
+      color: 'yellow' ,
+      bgColor: 'lightgrey'
     }
 ];
