@@ -13,6 +13,9 @@
     height:100%;
     max-height:800px;
 
+
+    
+
   }
 
   .info {
@@ -25,11 +28,29 @@
     div {
       font-size: 20px;
     }
+    #live-site-btn {
+    position: relative;
+    background: red;
+    border: none;
+    padding: 10px;
+    box-shadow: 5px 9px 9px 0px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    transition: all 1500ms;
+    }
+    #live-site-btn:active {
+      top: 5px;
+    box-shadow: 2px 9px 9px 0px rgba(0, 0, 0, 0.3);
+      
+    }
     a {
       font-size: 20px;
       color:white;
+      font-weight: 900;
     }
   }
+}
+.slider {
+  max-height: 450px !important;
 }
 ul.slider-list[style] {
   height: 100% !important;
@@ -48,4 +69,34 @@ li.slider-slide {
   left: 10px;
   top: 60px;
   z-index: 100;
+}
+.goDown {
+  position: fixed;
+  right: 50%;
+  bottom: 20px;
+  z-index: 100;
+  color : red;
+  animation: upAndDown 1s linear infinite ;
+  a {
+    color: red;
+  }
+}
+
+@keyframes upAndDown {
+    0% {
+        bottom:20px;
+    }
+    20%{
+        bottom:25px;
+    }
+    60% {
+        bottom: 30px;
+    }
+    80%{
+        bottom:25px;
+    }
+    100% {
+        bottom:20px;
+    }
+    
 }

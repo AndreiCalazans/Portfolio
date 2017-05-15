@@ -3,6 +3,7 @@ import {portfolios} from '../portfolioSeed/index';
 import {Link} from 'react-router';
 var Carousel = require('nuka-carousel');
 const ProjectDisplay = React.createClass({
+
   display: function() {
     let nameOfApp = this.props.params.projectName;
 
@@ -16,19 +17,21 @@ const ProjectDisplay = React.createClass({
     // filter this portfolio
     return portfolios.filter((each) => {
       return each.name === nameOfApp;
-    }).map((each) => {
+    }).map((each , index) => {
       return (
-        <div id='displayProject' key='1'>
+        <div id='displayProject' key={index}>
           {/* <img  src={each.img} alt=""/> */}
           <div id='carouselContainer' >
             <Carousel>
               {renderImgs(each.displayImages)}
             </Carousel>
           </div>
-          <div className="info" style={{background: each.color}}>
+          <div className="info" id='info' style={{background: each.color}}>
             <h1>{each.name}</h1>
             <hr/>
-            <a href={each.url} target='_blank'>Live Site</a>
+            <button id='live-site-btn'>  
+             <a  href={each.url} target='_blank'>Link to the Live Version</a>
+            </button>
             <h3>HTML CSS JS REACTJS</h3>
             <div>{each.info}</div>
             <div>{each.completeInfo}</div>
@@ -37,6 +40,24 @@ const ProjectDisplay = React.createClass({
       )
     });
   },
+
+  handleScroll(e) {
+    if (window.scrollY > 50 ) {
+      this.refs.btnBottom.style.display = 'none';
+    }else {
+      this.refs.btnBottom.style.display = 'inherit';
+    }
+  },
+
+  componentDidMount: function(){
+    window.addEventListener('scroll', this.handleScroll);
+  },
+
+  componentWillUnmount:function(){
+    window.removeEventListener('scroll', this.handleScroll);
+    
+  },
+
   render() {
 
     return (
@@ -48,6 +69,11 @@ const ProjectDisplay = React.createClass({
           </p>
           </Link>
         </div>
+          <div ref='btnBottom' className="goDown">
+            <a href="#info">
+              <i className="fa fa-chevron-down fa-3x" aria-hidden="true"></i>
+            </a>
+          </div>
         {this.display()}
       </div>
     )
@@ -55,3 +81,5 @@ const ProjectDisplay = React.createClass({
 });
 
 export default ProjectDisplay;
+
+

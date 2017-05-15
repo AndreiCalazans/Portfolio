@@ -4,8 +4,8 @@ import {portfolios} from '../portfolioSeed/index';
 const Portfolio = React.createClass({
   render() {
     function renderPortfolio() {
-      return portfolios.map((each) => {
-        return <PortfolioBox key={each.id}  bgColor={each.bgColor} color={each.color} img={each.img}  name={each.name} info={each.info}></PortfolioBox>
+      return portfolios.map((each, index) => {
+        return <PortfolioBox key={index}  bgColor={each.bgColor} color={each.color} img={each.img}  name={each.name} info={each.info}></PortfolioBox>
       })
     };
     return (

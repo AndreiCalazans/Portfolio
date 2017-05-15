@@ -20,7 +20,6 @@ var Text = React.createClass({
 });
 export var portfolios = [
   {
-    id: 1,
     url: 'http://andrei-voting-app.herokuapp.com/',
     img: require('../images/perspectives/votingApp3d.png'),
     displayImages: [
@@ -44,7 +43,24 @@ export var portfolios = [
     bgColor: 'white'
   },
   {
-    id: 2,
+      url: 'http://andrei-stock-chart.herokuapp.com/',
+      img: require('../images/stockChart/stockChart3d.png'),
+      displayImages: [
+        require('../images/stockChart/stockChart3d.png'),
+        require('../images/stockChart/stockChart2.png'),
+        require('../images/stockChart/stock-chart.png'),
+      ],
+      name: 'React Stock Chart',
+      info: "Stock chart created using React, socket.io and HighCharts",
+      completeInfo: `The StockChart app is part of the FreeCodeCamp Back-End Certificate curriculum, it is a required challenge that must be done in order to complete the
+      certification. The challenge required the student to build an app that let's the user view a graph dispaying the recent trend lines for each added stock, add new stocks by their
+      symbol name, remove stocks and see the changes in real-time when any other user adds or removes a stock. To resolve the real time sync between users I used socket.io which is a Web
+      Socket package. `,
+      stack: 'React, SocketIO, express and NodeJs',  
+      color: 'white' ,
+      bgColor: 'lightgrey'
+    },
+  {
     url: 'http://andrei-disc.surge.sh/',
     img: require('../images/perspectives/disc.png'),
     displayImages: [
@@ -64,8 +80,25 @@ export var portfolios = [
     color: 'teal',
     bgColor: 'pink'
   },
+    {
+      url: 'http://nightlife-andrei.herokuapp.com/',
+      img: require('../images/nightlife/nightlife3d.png'),
+      displayImages: [
+        require('../images/nightlife/nightlife3d.png'),
+        require('../images/nightlife/nightlife.png'),
+        require('../images/nightlife/nightlife2.png'),
+      ],
+      name: 'NightLife Web App',
+      info: "Nightlife coordination app which let's you search bars to go in your city and see how many people are going",
+      completeInfo: `The Nightlife coordination app is part of the FreeCodeCamp Back-End Certificate curriculum, it is a required challenge that must be done in order to complete the
+      certification. The challenge required the student to build an app that let's the user authenticate, view bars in his/her city
+      , see how many people are already attending that destination and also decide if you are or not going to that destination. This app use a Yelp API to find venues
+      in the cities of the user search.`,
+      stack: 'ReactJs, Autho0, express and NodeJs',  
+      color: 'purple' ,
+      bgColor: 'khaki'
+    },
   {
-    id: 3,
     url:'https://andreicalazans.github.io/calculator1/index.html',
     img: require('../images/perspectives/calculator.png'),
     displayImages: [
@@ -81,7 +114,6 @@ export var portfolios = [
     color: 'grey',
     bgColor: 'lightblue'
   },  {
-      id: 4,
       url: 'http://twitchtv-andrei.surge.sh/',
       img: require('../images/perspectives/twitch.png'),
       displayImages: [
@@ -100,7 +132,6 @@ export var portfolios = [
       bgColor: 'orange'
     },
     {
-      id: 5,
       url: 'http://react-todo-andrei.herokuapp.com/',
       img: require('../images/perspectives/Todo.png'),
       displayImages: [
@@ -117,7 +148,6 @@ export var portfolios = [
       bgColor: 'lightblue'
     },
     {
-      id: 6,
       url: 'http://pomodoro-timer.surge.sh/',
       img: require('../images/pomodoro/pomodoro3d.png'),
       displayImages: [
@@ -138,7 +168,6 @@ export var portfolios = [
       bgColor: 'white'
     },
     {
-      id: 7,
       url: 'https://codepen.io/AndreiCalazans/full/GjdpRB/',
       img: require('../images/perspectives/jepordy.png'),
       displayImages: [
@@ -155,7 +184,6 @@ export var portfolios = [
       bgColor: 'white'
     },
     {
-      id: 8,
       url: 'http://drum-set.surge.sh/',
       img: require('../images/drum/drumset3d.png'),
       displayImages: [
@@ -171,8 +199,8 @@ export var portfolios = [
       stack: 'HTML5, Css3 and Javascript',
       color: 'lightblue' ,
       bgColor: 'khaki'
-    },{
-      id: 9,
+    },
+    {
       url: '',
       img: require('../images/api.png'),
       displayImages: [
@@ -188,7 +216,6 @@ export var portfolios = [
       bgColor: 'white'
     },
     {
-      id: 10,
       url: 'https://codepen.io/AndreiCalazans/full/ALYkvW/',
       img: require('../images/weatherApp/weatherApp3d.png'),
       displayImages: [
@@ -205,26 +232,6 @@ export var portfolios = [
       bgColor: 'khaki'
     },
     {
-      id: 11 ,
-      url: 'http://nightlife-andrei.herokuapp.com/',
-      img: require('../images/nightlife/nightlife3d.png'),
-      displayImages: [
-        require('../images/nightlife/nightlife3d.png'),
-        require('../images/nightlife/nightlife.png'),
-        require('../images/nightlife/nightlife2.png'),
-      ],
-      name: 'NightLife Web App',
-      info: "Nightlife coordination app which let's you search bars to go in your city and see how many people are going",
-      completeInfo: `The Nightlife coordination app is part of the FreeCodeCamp Back-End Certificate curriculum, it is a required challenge that must be done in order to complete the
-      certification. The challenge required the student to build an app that let's the user authenticate, view bars in his/her city
-      , see how many people are already attending that destination and also decide if you are or not going to that destination. This app use a Yelp API to find venues
-      in the cities of the user search.`,
-      stack: 'ReactJs, Autho0, express and NodeJs',  
-      color: 'purple' ,
-      bgColor: 'khaki'
-    },
-    {
-      id: 12 ,
       url: 'http://andrei-chat.herokuapp.com/',
       img: require('../images/socketChat/socketChat3d.png'),
       displayImages: [
