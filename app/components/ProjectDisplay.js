@@ -48,7 +48,6 @@ const ProjectDisplay = React.createClass({
       this.refs.btnBottom.style.display = 'inherit';
     }
   },
-
   componentDidMount: function(){
     window.addEventListener('scroll', this.handleScroll);
   },

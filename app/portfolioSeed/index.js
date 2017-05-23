@@ -43,6 +43,25 @@ export var portfolios = [
     bgColor: 'white'
   },
   {
+    url: 'http://andrei-pump.surge.sh/',
+    img: require('../images/bombaCalc/bombaCalc3d.png'),
+    displayImages: [
+      require('../images/bombaCalc/bombaCalc.png'),
+      require('../images/bombaCalc/bombacalc2.png'),
+      require('../images/bombaCalc/bombacalc3.png'),
+      require('../images/bombaCalc/bombacalc4.png'),
+      require('../images/bombaCalc/bombaCalc5.png'),
+      require('../images/bombaCalc/bombaCalcResul.png')
+    ],
+    name: 'BombaCalc',
+    info: 'BombaCalc, A water pump calculator using redux-form.',
+    completeInfo: `BombaCalc is a water pump calculator using react and redux-form, Part of a academic project done for a Mechanics of fluid class. The app's intention is to 
+    enable the user to make complex calculations of NPSH(net positive static head) and preassure over the pump with simple inputs.`,
+    stack: 'NodeJs, Express,React js , Redux , Redux-form',
+    color: 'lightgrey',
+    bgColor: 'white'
+  },
+  {
       url: 'http://andrei-stock-chart.herokuapp.com/',
       img: require('../images/stockChart/stockChart3d.png'),
       displayImages: [
