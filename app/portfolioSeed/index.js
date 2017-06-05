@@ -21,7 +21,7 @@ var Text = React.createClass({
 export var portfolios = [
   {
     url: 'https://andrei-bookbarter.herokuapp.com/',
-    img: require('../images/perspectives/votingApp3d.png'),
+    img: require('../images/bookBarter/bookbarter3d.png'),
     displayImages: [
       require('../images/bookBarter/bookbarter3d.png'),
       require('../images/bookBarter/bookBarter1.png'),
@@ -36,8 +36,8 @@ export var portfolios = [
     send the books.
     `,
     stack: 'NodeJs, Express, MongoDD, ReactJs, Redux and more',
-    color: 'blue',
-    bgColor: 'white'
+    color: 'lightblue',
+    bgColor: 'lightgrey'
   },
   {
     url: 'http://andrei-voting-app.herokuapp.com/',
