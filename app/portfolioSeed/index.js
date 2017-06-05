@@ -20,6 +20,26 @@ var Text = React.createClass({
 });
 export var portfolios = [
   {
+    url: 'https://andrei-bookbarter.herokuapp.com/',
+    img: require('../images/perspectives/votingApp3d.png'),
+    displayImages: [
+      require('../images/bookBarter/bookbarter3d.png'),
+      require('../images/bookBarter/bookBarter1.png'),
+      require('../images/bookBarter/bookBarter2.png'),
+      require('../images/bookBarter/bookBarter3.png')
+    ],
+    name: 'Book Barter',
+    info: 'A book trading club, register and trade your books. Full stack ReactJs app with authentication system using passportJs.',
+    completeInfo: `Book Barter is a book trading club which allows users to register new books and request trades between other users. 
+    The app has an authentication system made with passportjs and all its database is handled using mongodb plus mongoose. The app has a 
+    cool way of interecting with other users by requesting and accepting trades. All the trades are of responsibility of the users to receive and 
+    send the books.
+    `,
+    stack: 'NodeJs, Express, MongoDD, ReactJs, Redux and more',
+    color: 'blue',
+    bgColor: 'white'
+  },
+  {
     url: 'http://andrei-voting-app.herokuapp.com/',
     img: require('../images/perspectives/votingApp3d.png'),
     displayImages: [
