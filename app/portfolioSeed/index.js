@@ -19,6 +19,27 @@ var Text = React.createClass({
   }
 });
 export var portfolios = [
+ {
+    url: 'https://youtu.be/gqWgqy_wzzo',
+    img: require('../images/crudApp/crudApp3d.png'),
+    displayImages: [
+      require('../images/crudApp/crudApp3d.png'),
+      require('../images/crudApp/crudApp.png'),
+      require('../images/crudApp/crudApp2.png'),
+      require('../images/crudApp/crudApp3.png')
+    ],
+    name: 'Crud APP',
+    info: 'Crud APP using React js + Redux and a Parse Backend platform.',
+    completeInfo: `This is a crud app made for a client based in London, I was contracted to make the full functionality of the app on the client side.
+    I was responsible to make the complete app, I had to create sign in form authenticated by the Parse platform and populate a view with Events which 
+    I got from the backend database, besides showing the existant events it was also necessary
+    to be able to create, update and delete events. These events needed to have information like name of the place and title for the event. One of the things I also
+    implemented was the image uploading logic, which enabled the user to upload an image and save it to the database.
+    `,
+    stack: 'NodeJs, Express, MongoDD, ReactJs, Redux and more',
+    color: 'pink',
+    bgColor: 'yellow'
+  },
   {
     url: 'https://andrei-bookbarter.herokuapp.com/',
     img: require('../images/bookBarter/bookbarter3d.png'),
